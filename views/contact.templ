@@ -1,0 +1,11 @@
+package views
+
+import (
+	"app/templates/components/global"
+	"app/templates/components/forms"
+)
+
+templ Contact() {
+	@global.PageHeader("Contact", templ.Attributes{"style": "background-image: url(/static/images/backgrounds/mailbox_bg.jpg)"})
+	@forms.ContactForm()
+}

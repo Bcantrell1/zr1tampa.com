@@ -1,0 +1,70 @@
+package home
+
+templ ServiceCollection() {
+
+	<section>
+		<div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+			<header class="text-center">
+				<h2 class="text-xl font-bold sm:text-5xl">Our Most Common Services</h2>
+			</header>
+
+			<ul class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
+				<li>
+					<a href="/services" class="group relative block">
+					<img
+						src="/static/images/content/shocks_complete.jpg"
+						alt=""
+						class="aspect-square w-full object-cover transition rounded-md duration-500 group-hover:opacity-90"
+						id="scroller1"
+					/>
+
+					<div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+						<h3 class="text-xl font-bold text-red-700">Shock Revalve</h3>
+
+						<span class="mt-1.5 btn">Services</span>
+					</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="/services" class="group relative block">
+					<img
+						src="/static/images/content/fork_valves.jpg"
+						alt=""
+						class="aspect-square w-full object-cover transition rounded-md duration-500 group-hover:opacity-90"
+						id="scroller2"
+					/>
+
+					<div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+						<h3 class="text-xl font-bold text-red-700">Fork Revalve</h3>
+
+						<span class="mt-1.5  btn">Services</span>
+					</div>
+					</a>
+				</li>
+
+				<li class="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+					<a href="/services" class="group relative block">
+					<img
+						src="/static/images/content/fork_complete.jpg"
+						alt=""
+						class="aspect-square w-full object-cover transition rounded-md duration-500 group-hover:opacity-90"
+						id="scroller3"
+					/>
+
+					<div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+						<h3 class="text-xl font-bold text-red-700">Overhaul / Rebuild Service</h3>
+
+						<span class="mt-1.5 btn">Services</span>
+					</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<script>
+		ScrollReveal().reveal('#scroller1', { delay: 200, reset: true });
+		ScrollReveal().reveal('#scroller2', { delay: 200, reset: true });
+		ScrollReveal().reveal('#scroller3', { delay: 200, reset: true });
+	</script>
+}

@@ -1,0 +1,14 @@
+package global
+
+templ PageInfo(info string, button bool, button_link templ.SafeURL, button_title string) {
+<div class="mx-auto text-center md:text-left max-w-screen-xl px-4 py-4 sm:px-6 sm:py-12">
+	<p class="mt-4 text-lg text-gray-200">
+		{info}
+	</p>
+	if button {
+	<a href={button_link} target="_blank" class="mt-8 btn capitalize btn-outline">
+		{button_title}
+	</a>
+	}
+</div>
+}

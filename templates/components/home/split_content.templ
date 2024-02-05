@@ -1,0 +1,38 @@
+package home
+
+templ SplitContent() {
+
+	<section>
+		<div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+			<div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+			<div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+				<img
+				alt="ZR1 Forks Image"
+				src="/static/images/content/fork_complete.jpg"
+				class="absolute inset-0 h-full w-full object-cover"
+				id="scroller"
+				/>
+			</div>
+
+			<div class="lg:py-24">
+				<h2 class="text-3xl font-bold sm:text-4xl">Tampa's Suspension Service Center</h2>
+
+				<p class="mt-4 text-white-200">
+					We specialize in suspension services in the Tampa area, providing a range of solutions such as rebuilds, repairs, revalving, replacement, and upgrades. Whatever your suspension needs, we got you covered at ZR1.
+					</p>
+
+				<a
+				href="/contact"
+				class="mt-8 btn btn-outline"
+				>
+				Get A Quote Today
+				</a>
+			</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		ScrollReveal().reveal('#scroller', { delay: 200, reset: true });
+	</script>
+}
+

@@ -1,0 +1,38 @@
+package views
+
+import (
+	"app/templates/components/global"
+	"app/templates/components/services"
+)
+
+templ Services() {
+	@global.PageHeader("services", templ.Attributes{"style": "background-image: url(/static/images/backgrounds/services_bg.jpg)"})
+	@global.PageInfo(
+		"Ready for that factory feeling? Schedule your next suspension service with Zr1 Tampa today. Whether you're looking for a Fork Revalve, Shock Rebuild, or any of our premium services, taking those steps with Zr1 is a breeze. Just submit your request for a personalized quote through our online form.",
+		true,
+		templ.URL("/#"),
+		"Download Custom Work Form",
+	)
+	@services.ServiceFeature(
+		"Shock Service",
+		"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet provident nulla error!",
+		"/static/images/content/shocks_complete.jpg",
+		"Shock Revalve",
+		"/static/images/content/shocks_complete.jpg",
+		"Shock Rebuild",
+		templ.Attributes{"style": "order: 1"},
+	)
+	@services.ServiceCollapse("Shock Revalve Info", "Your shock will be disassembled, cleaned and inspected for any unusual wear. Then, using the RACETECH Gold Valve, we will tailor a FACTORY SPEC setting specifically for your weight, skill level and the type of riding you’ll be doing. It will be reassembled using all new SKF seals and an OEM bushing. The shock will be vacuum or hand bled using Hi-Quality oil then clickers and spring preload will be set.")
+	@services.ServiceCollapse("Shock Rebuild Info", "Your shock will be disassembled, cleaned and inspected for any unusual wear. It will be reassembled using all new SKF seals and OEM bushing. The shock will be vacuum or hand bled using Hi-Quality oil and clickers and spring preload will be set.")
+	@services.ServiceFeature(
+		"Fork Service",
+		"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet provident nulla error!",
+		"/static/images/content/fork_valves.jpg",
+		"Fork Revalve",
+		"/static/images/content/home_cta_forks.jpg",
+		"Fork Rebuild",
+		templ.Attributes{"style": "order: 3"},
+	)
+	@services.ServiceCollapse("Fork Revalve Info", "Your forks will be disassembled, cleaned and inspected for any unusual wear. Then, using the RACETECH Gold Valves we will tailor a FACTORY SPEC setting specifically for your weight, skill level and the type of riding you’ll be doing. Spring preload will be set internally and SKF Seals, bushings will be replaced. Hi-Quality oil will be set to the proper oil height that we recommend.")
+	@services.ServiceCollapse("Fork Rebuild Info", "Your forks will be disassembled, cleaned and inspected for any unusual wear. It will be reassembled using all new SKF seals and OEM bushings along with Hi-Quality oil, set to the correct height that we recommend.")
+}

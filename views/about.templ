@@ -1,0 +1,14 @@
+package views
+
+import (
+	"app/templates/components/global"
+	"app/templates/components/about"
+)
+
+templ About() {
+	@global.PageHeader("About Us", templ.Attributes{"style": "background-image: url(/static/images/backgrounds/services_bg.jpg)"})
+	@about.AboutCody()
+	@global.Cta()
+	@about.AboutInfo()
+	@global.Reviews()
+}

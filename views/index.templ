@@ -1,0 +1,14 @@
+package views
+
+import (
+	"app/templates/components/home"
+	"app/templates/components/global"
+)
+
+templ Index() {
+	@home.Hero()
+	@home.SplitContent()
+	@global.Reviews()
+	@home.ServiceCollection()
+	@global.Cta()
+}

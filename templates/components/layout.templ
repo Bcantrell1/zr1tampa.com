@@ -1,0 +1,44 @@
+package components
+
+templ Layout(view templ.Component) {
+<html data-theme="black">
+@Head()
+
+<body class="selection:bg-red-700 selection:text-white">
+	<div class="drawer drawer-end">
+		<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+		<section class="drawer-content flex flex-col w-full h-full">
+			@Header()
+			@view
+			@Footer()
+		</section>
+		<div class="drawer-side">
+			<label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+			<ul class="menu p-4 w-80 min-h-full bg-primary text-base-content">
+				<!-- Sidebar content here -->
+				<img src="/static/images/logos/zr1_logo.webp" alt="" />
+				<li><a class="hover:text-red-700" href="/">HOME</a></li>
+				<li><a class="hover:text-red-700" href="/about">ABOUT US</a></li>
+				<li><a class="hover:text-red-700" href="/services">OUR SERVICES</a></li>
+				//<li><a class="hover:text-red-700" href="/shipping">SHIPPING</a></li>
+				<li><a class="hover:text-red-700" href="/contact">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
+}
+
+templ Head() {
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Zr1 Tampa Suspension Service Center</title>
+	<link href="/static/style.css" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+	<script src="https://unpkg.com/htmx.org@1.9.9"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+}
