@@ -10,7 +10,6 @@ import (
 	"os/signal"
 	"time"
 
-	"app/handlers"
 	"app/routes"
 
 	"github.com/labstack/echo/v4"
@@ -52,8 +51,7 @@ func main() {
 
 		if code == http.StatusNotFound {
 			// Handle 404 error here
-			c.HTML(http.StatusNotFound, "<h1>404 Not Found</h1>")
-			e.GET("/404", handlers.ErrorPageHandler)
+			c.Redirect(http.StatusTemporaryRedirect, "/404")
 			return
 		}
 

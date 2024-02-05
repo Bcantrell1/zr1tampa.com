@@ -20,5 +20,6 @@ func Routes(e *echo.Echo) {
 	e.GET("/shipping", handlers.ShippingHandler)
 
 	// Utility routes
+	e.GET("/404", handlers.ErrorPageHandler)
 	e.DELETE("/toast/remove", handlers.ToastRemover)
 }
