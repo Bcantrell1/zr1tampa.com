@@ -2817,16 +2817,20 @@ details.collapse summary::-webkit-details-marker {
   height: 24rem;
 }
 
+.h-\[59vh\] {
+  height: 59vh;
+}
+
+.h-\[75\%\] {
+  height: 75%;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.min-h-96 {
-  min-height: 24rem;
 }
 
 .min-h-full {
